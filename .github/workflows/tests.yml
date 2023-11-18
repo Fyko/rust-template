@@ -33,8 +33,9 @@ jobs:
       - name: Lint and format
         run: cargo make lint
 
-      - name: Install nextest
-        uses: taiki-e/install-action@nextest
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: nextest,cargo-makle
 
       - name: Run tests
         run: cargo make test-ci

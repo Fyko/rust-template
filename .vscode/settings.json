@@ -1,11 +1,11 @@
 {
     "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.organizeImports": false,
-        "editor.trimAutoWhitespace": false
+        "source.fixAll": "explicit",
+        "source.organizeImports": "never",
+        "editor.trimAutoWhitespace": "never"
     },
     "editor.formatOnSave": true,
-    "[rust,json]": {
+    "[rust]": {
         "editor.insertSpaces": false,
         "editor.tabSize": 4,
         "editor.defaultFormatter": "rust-lang.rust-analyzer"
@@ -25,5 +25,12 @@
     },
     "material-icon-theme.files.associations": {
         ".envrc": "settings"
+    },
+    "[go]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "never",
+            "editor.trimAutoWhitespace": "never"
+        }
     }
 }
